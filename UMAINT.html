@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UMAINT John Shaw Grad HTML</title>
+        <link rel="stylesheet" href="styleumain.css">
+        <script src="scriptumain.js">  </script>
+    </head>
+    <body>
+        <h1>User Maintenance Screen</h1>
+        <div>
+            <form>
+            <label>Enter User Name</label>
+            <input type="text" id="userName" required    
+            minlength="2" maxlength="20" 
+            placeholder="First and Last Name">
+            <label>University</label>
+            <input type="text" id="userUniv" required    
+            minlength="2" maxlength="20" 
+            placeholder="University">
+            </form>
+            <button id="Add" onclick="adduser()">Add</button>
+            <button id="Del" onclick="deluser()">Delete</button>
+        </div>
+        <div>
+
+            <ul id="active_user"> 
+           
+                <li>John Shaw, Louisville</li>
+                <li>Melissa Shaw, Eastern Kentucky</li>
+                <li>Kaela Shaw, Ohio State</li>
+            </ul>  
+        </div> 
+    </body>
+</html>
